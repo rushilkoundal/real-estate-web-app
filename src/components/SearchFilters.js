@@ -1,10 +1,10 @@
-import { Divider, FormControl, InputLabel, MenuItem, Select } from '@mui/material';
-import { filterData, getFilterValues } from '../filterData';
+import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
+import { filterData } from '../filterData';
 import { Box } from '@mui/system';
 import { useState } from 'react';
 
 function SearchFilters({ setSearch }) {
-    const [filters, setFilters] = useState(filterData);
+    const [filters] = useState(filterData);
 
     return (
         <div className='searchFilters' style={{ display: 'flex', justifyContent: 'space-evenly', padding: '10px', background: '#fff' }}>
